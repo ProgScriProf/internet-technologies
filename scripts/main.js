@@ -4,7 +4,7 @@ searchBox.focus(increaseSizeSearchBox)
 searchBox.blur(decreaseSizeSearchBox);
 
 function increaseSizeSearchBox() {
-    return changeSizeSearchBox(500);
+    return changeSizeSearchBox(400);
 }
 
 function decreaseSizeSearchBox() {
