@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/img/light-background.jpg");
+    font-family: Comfortaa;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #4d4d4d;
+    background: url("/img/dark-background.jpg");
+}
+
+.logo {
+    float: left;
+}
+
+.logo-text {
+    display: block;
+    padding: 0px 5px 0 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #000000;
+}
+
+.logo-text-fostfix {
+    font: normal 38px 'Fredoka One';
+    color: #3CBEB4;
+    text-shadow: none;
+}
+
+.logo-slogan {
+    text-align: center;
+    font-weight: bold;
+    color: #8d96a8;
+}
+
+.main-menu {
+    list-style: none;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item-link {
+    display: inline-block;
+    position: relative;
+    padding: 15px 15px 15px 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-item-link:hover {
+    background: #00000038;
+    color: #FFC000;
+}
+
+.menu-item-link:after {
+    content: "";
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    background: url('/img/menu.png') no-repeat;
+    left: 8px;
+    top: 10px;
+}
+
+.menu-item-link:hover:after {
+    background-position-y: -26px;
+}
+
+.menu-item-swap .menu-item-link::after {
+    background-position-x: -26px;
+}
+
+.menu-profile .menu-item-link::after {
+    background-position-x: -52px;
+}
+
+.menu-item-search-box {
+    display: inline-block;
+    padding: 5px;
+    width: 200px;
+    
+    border: 1px solid white;
+    border-radius: 3px;
+    
+    font: 16px Comfortaa;
+    background: #0000002c;
+    color: white;
+}
+
+.menu-item-search-box::-webkit-input-placeholder {
+    color: rgba(192, 192, 192, 0.479);
+    font-size: 14px;
+}
+
+.menu-item-search-box:focus {
+    outline: none;
+    background-color: #ffffff0a;
+}
+
+main {
+    padding: 50px 60px 0 60px;
+}
